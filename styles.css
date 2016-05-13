@@ -1,0 +1,730 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: url(img/bg-body.png) no-repeat 50% 0 /*по центру*/#0e0e0e;
+    font: 12px/1.67 /*line-height*/ Arial Regular, Helvetica, sans-serif; 
+    padding: 40px /*сверху снизу*/ 0  /*по краям*/   ;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;/*выровняем по центру */
+}
+/*_______________________________________________________________________________________________________________*/
+                /*header begin*/
+header{
+    background: #fff;
+    height: 97px;
+    border-radius: 8px 8px 0 0; /*лев верх прав верх */    
+    -o-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+}
+header h1{
+    float: left;
+    margin: 30px 0 0 40px;
+    /*сверху справа снизу слева*/
+}
+.tel{
+    background: url(img/bg-tel.png) no-repeat 0 0;
+    padding-top: 4px;
+    padding-left: 90px;
+    padding-right: 35px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(192, 192, 192, 0.7);
+    float: right;
+}
+nav{
+    float: right;
+    clear: right;
+}
+nav li{
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+nav li a{
+    text-transform: uppercase;
+    color: #808080;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav li.current a{
+    background: linear-gradient(#ffffff, #006cff, #ffffff); 
+    color: #ffffff;
+    border-radius: 4px;
+}
+nav li a:hover{
+    background: linear-gradient(#6c9ee0, #003a89, #2d7adf); 
+    color: #ffffff;
+    border-radius: 4px;
+}
+/*______________________________________________________________________________________________________*/
+                /*header end*/
+
+/*----------------------------------------------------------page-block----------------------------------------------------------------*/
+.page-block{
+background: url(img/bg-about-as.png) no-repeat 0 0; 
+color: #ffffff;
+
+padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+.page-block p{
+    float: right;
+    font-style: italic;
+    line-height: 40px;
+    font-size: 20px;
+}
+.page-block h1{
+    font-size: 25px;
+    font-style: bold;
+}
+/*----------------------------------------------------------end page block----------------------------------------------------------------*/
+
+/*------------------------------------------------------------------main-block-------------------------------------------------*/
+.main-block{
+    background: linear-gradient(to left, #ffffff 98%, #e8e8e8);
+}
+.main-block:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+main{
+    float: left;    
+    width: 631px;
+    padding-left: 40px;
+}
+main p{
+    margin-top: 40px;
+    color: #4f4f4f;
+    line-height: 24px;
+}
+.side-bar{
+    float: right;
+    width: 220px;
+    margin-right: 40px;
+    background: linear-gradient(to left, #ffffff 90%, #dfdfdf);
+    padding-bottom: 70px;
+}
+.sb-block h3.title{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    background: linear-gradient(to right, #cfcfcf, #ffffff);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.sb-block ul.design{
+    padding-left: 20px;
+}
+.sb-block ul.clients{
+    padding-left: 20px;
+}
+/*------------------------------------------------------------------end main-block-------------------------------------------------*/
+
+@font-face {
+    font-family: "Trebuchet MS"; 
+    src: url(fonts/Trebuchet MS.ttf);
+    font-family: "nevis"; 
+    src: url(fonts/nevis.ttf);
+}
+.sliderblock{
+    background: url(img/bg-sliderblock.png) no-repeat 0 0;
+    height: 250px; /*335*/
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 85px;
+    padding-bottom: 0;
+    color: #fff;
+    font-size: 29px;
+    font-family: "Trebuchet MS";
+    line-height: 35px;
+}
+.fs35{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-top: 15px;
+    letter-spacing: -1.5px;
+}
+.started{
+    background: url(img/arr.png) no-repeat 95% 55%, linear-gradient(#e0dada 50%, #6c6c6c);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b90016;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    padding-left: 25px;
+    padding-right: 53px;
+}
+.blurbs{
+    background: #ededed;
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 0;
+    border-bottom: 2px solid #cecece;
+}
+.blurbs li{
+    float: left;
+    padding-left: 85px;
+    padding-top: 4px;
+    padding-right: 0;
+    padding-bottom: 0;
+    width: 150px;
+    margin-right: 74px;
+}
+.blurbs li:last-child{
+    margin-right: 0;
+}
+.blurbs h3{
+    color: #575757;
+    font-size: 15px;
+    font-weight: bold;
+}
+.blurbs li.money{
+    background: url(img/money.png) 0 50% no-repeat;
+}
+.blurbs li.watch{
+    background: url(img/watch.png) 0 50% no-repeat;
+}
+.blurbs li.fone{
+    background: url(img/fone.png) 0 50% no-repeat;
+}
+.blurbs:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.middle-block{
+    background: #ffffff;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.middle-block li{
+    float: left;
+    width: 265px;
+    margin-right: 45px;
+}
+.middle-block li:last-child{
+    margin-right: 0;
+}
+.middle-block:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.middle-block h2, h2.title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #585858;
+    margin-bottom: 24px;
+}
+.middle-block p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 12;
+    color: #4f4f4f;
+}
+.middle-block a.read_more{
+    font-family: "nevis";
+    text-transform: uppercase;
+    color: #6c6c6c;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    background: linear-gradient(#fefefe, #e5e5e5);
+}
+.middle-block a.read_more:hover{
+    background: linear-gradient(#dddddd, #ffffff);
+}
+.design{
+    list-style-image: url(img/li-design.gif);
+    list-style-position: inside;
+}
+.design li{
+    border-bottom: 1px dotted #838383;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.design li:last-child{
+    border-bottom: none;
+}
+.design a{
+color: #0f4db6;
+    }
+.design a:hover{
+    font-weight: bolder;
+}
+/*--------------------SERVICES BEGIN---------------------------------------------------------------------------------------*/
+.right{
+   margin-left: 54px;
+}
+.top{
+    background: linear-gradient(to top, #ffffff 97%, #dfdfe1);
+    border-top: 1px solid #dfdfdf;    
+}
+.benefits{
+    background: linear-gradient(to top, #ffffff 97%, #dfdfe1);
+    border-top: 1px solid #dfdfdf;
+    padding-left: 40px;
+    padding-top: 27px;
+    padding-bottom: 50px;
+}
+.benefits li{
+    width: 345px;
+    padding-left: 50px;
+    background: url(img/benef-check.png) 0 50% no-repeat;
+    margin-right: 80px;
+    margin-top: 40px;
+    float: left;
+}
+.benefits li:nth-child(even){/*для каждого четного элемента*/
+    margin-right: 0;
+}
+h2 span{
+    font-size: 15px;
+    letter-spacing: -1px;
+}    
+    
+    /*---------------------SERVICES END--------------------------*/
+/*-------------------------------------------------------------------PORTFOLIO BEGIN------------------------------------*/
+.page-block ul{
+    float: right;
+    margin-top: 10px;
+}
+.page-block li{
+    float: left;
+    margin-right: 30px;
+} 
+.page-block li:last-child{
+    margin-right: 0;
+}
+.page-block li a{
+    color: #93daff;
+    font-size: 13px;
+}
+.page-block li a:hover{
+    color: #ffffff;
+}
+.portfolio .middle-block{
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+.portfolio .one{
+    padding-top: 35px;
+}
+.portfolio p{
+    margin-top: 0;
+}
+.portfolio h4{
+    margin-top: 15px;
+}
+.pagination{
+    background: linear-gradient(to top, #ffffff 50%, #dfdfe1);
+    border-top: 1px solid #dfdfdf;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.pagination li{
+    display: inline-block;
+    margin-right: 8px;
+}
+.pagination li a{
+    font-weight: bold;
+    color: #0f4db6;
+}
+/*-------------------------------------------------------------------------PORTFOLIO END---------------*/
+/*-------------------------------------------------------------------------CONTACT---------------*/
+form{
+    width: 380px;
+    height: 565px;
+    margin-bottom: 50px;
+}
+label{
+    font-size: 13px;
+    color: #4f4f4f;
+}
+input[type=text]{
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    background: linear-gradient(#efefef, #fefefe 50%);
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+}
+textarea{
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    background: linear-gradient(#efefef, #fefefe 50%);
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    height: 160px;
+    resize: none;
+}
+input[type=submit]{
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    background: linear-gradient(#efefef, #fefefe 50%);
+}
+.soc-contact li{
+    display: inline-block;
+    margin-right: 13px;
+}
+.soc-contact a{
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: url(img/sprite-contact.png) -2px 0 no-repeat;
+}
+.soc-contact a.t{
+    background-position: -46px 0;
+}
+.soc-contact a.f{
+    background-position: -92px 0;
+}
+
+.sb-block ul{
+    margin-left: 20px;
+}
+ul.soc-contact{
+    padding-bottom: 180px;
+}
+    /*-------------------------------------------------------------------------CONTACT END---------------*/
+/*-----------------------------------------------------------------------BEGIN FOOTER------------------------------------------------------------------*/
+footer{
+    background-color: #ededed;
+    border-top: 2px solid #bababa;
+    border-radius: 0 0 8px 8px; 
+}
+.top-footer{
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.top-footer li{
+    float: left;
+}
+.top-footer:after,
+.benefits{
+    content: '';
+    display: table;
+    clear: both;
+}
+.top-footer h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: #585858;
+}
+.browse-site{
+    width: 120px;
+}
+.browse-site a{
+    color: black;
+}
+.browse-site a:hover{
+    color: #2d7adf;
+    font-weight: bold;
+}
+.browse-site h3{
+    margin-bottom: 30px;
+}
+.our{
+    width: 315px;
+    margin-left: 115px;
+    margin-right: 65px;
+}
+.our .com{
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+}
+.our h3{
+    margin-bottom: 30px;
+}
+.from-our{
+    width: 285px;
+    line-height: 14px;
+}
+.from-our .blue{
+    color: #0f4db6;
+    font-weight: bold;
+}
+.date{
+    margin-top: 18px;
+}
+.bottom-footer{
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.bottom-footer .logo{
+    float: right;
+}
+.social{
+    float: right;
+    margin-right: 75px;
+}
+.social li{
+    float: left;
+    margin-right: 15px;
+}
+.social a{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(img/sprite-soc.png) no-repeat 0 0;
+}
+.social a.in{
+  background-position: -34px 0;  
+} 
+.social a.f{
+  background-position: -71px 0;  
+} 
+/*------------------------------------------------------------------------END FOOTER--------------------------------------------------------------------------*/
+/*----------------------------------------------------------------clearfix-------------------------------------------------------------------------------*/
+
+/*________________________________________________
+________________________________________________*/
+                /*begin slider*/
+.flexslider {
+  background: #ffffff;
+  border: 4px solid #ffffff;
+  position: relative;
+  zoom: 1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+    float: right;
+    height: 268px;
+    width: 396px;
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.flexslider .slides img {
+  height: auto;
+  -moz-user-select: none;
+}
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.loading .flex-viewport {
+  max-height: 300px;
+}
+.carousel li {
+  margin-right: 5px;
+}
+.flex-direction-nav {
+  *height: 0;
+}
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 63px;
+  height: 63px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.flex-direction-nav a.flex-next:before {
+}
+.flex-direction-nav .flex-prev {
+  left: -50px;
+    text-indent: 9999px;
+    background: url(img/Left.png) 0 0 no-repeat;
+}
+.flex-direction-nav .flex-next {
+  right: -50px;
+    text-indent: 9999px;
+    background: url(img/Right.png) 0 0 no-repeat;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: 0!important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+}
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+.flex-pauseplay a.flex-play:before {
+}
+.flex-control-nav {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+.flex-control-paging li a.flex-active {
+  background: white;
+  cursor: default;
+}
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+.flex-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+                /*end slider*/
